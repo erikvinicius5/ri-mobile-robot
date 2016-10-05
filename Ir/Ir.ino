@@ -18,17 +18,12 @@ void loop() {
  if ((CState == HIGH) && (RState == LOW && LState == LOW)) {
    avante();
  }else{
-   if (CState == LOW) {
-     giro();     
-   }else{
-     if(RState == HIGH && LState == HIGH){
+     if(CState == HIGH && RState == HIGH && LState == HIGH){
        parar();
      }else{
        giro();
      }
-   }
  }
-
 }
 
 void giro(){
